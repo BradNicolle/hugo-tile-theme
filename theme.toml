@@ -1,0 +1,9 @@
+name = "Hugo Tile"
+description = "Tile-based layout, ideal for portfolio websites."
+homepage = "//github.com/BradNicolle/hugo-tile-theme"
+tags = ["responsive", "configurable", "profile", "card", "contact", "social", "minimal", "google analytics"]
+min_version = 0.15
+
+[author]
+  name = "Bradley Nicolle"
+  homepage = "runnably.com"
