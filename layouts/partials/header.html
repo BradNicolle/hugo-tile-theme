@@ -1,0 +1,8 @@
+<header>
+    <h1>{{ .Site.Params.name }}</h1>
+    <ul class="social-icons">
+        {{ range .Site.Params.social }}
+            <li><a href="{{ .link }}" class="{{ .icon }}">{{ .title }}</a></li>
+        {{ end }}
+    </ul>
+</header>

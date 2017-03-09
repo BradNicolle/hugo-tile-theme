@@ -1,13 +1,13 @@
-<!DOCTYPE html>
-<html>
+{{ partial "html_head.html" . }}
 
-<head>
-	<title>{{ .Title }}</title>
-</head>
+{{ partial "header.html" . }}
 
-<body>
-	<h1>{{ .Title }}</h1>
-	{{ .Content }}
-</body>
+	<div class="back-home">
+		<a href="{{ .Site.BaseURL }}">&lt; Back to home</a>
+	</div>
+	<h2>{{ .Title }}</h2>
+	<div class="tile">
+		{{ .Content }}
+	</div>
 
-</html>
+{{partial "footer.html" . }}

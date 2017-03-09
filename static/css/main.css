@@ -1,0 +1,176 @@
+body {
+    padding: 60px;
+    margin: 0;
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+h1 {
+    //font-family: 'Comfortaa', cursive;
+    //font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -4px;
+    font-weight: 100;
+    font-size: 60px;
+    //padding: 10px;
+    margin: 0;
+    color: white;
+    //border: 10px solid white;
+    display: inline-block;
+}
+h2 {
+    //font-family: 'Montserrat', sans-serif;
+    //font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 6px;
+    margin-top: 40px;
+}
+.tile {
+    background-color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 60px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+.tile:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+.tile h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.85em;
+    font-weight: 200;
+    letter-spacing: 0.22em;
+    color: #313f47;
+}
+.tile figure {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+section {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.back-home {
+    margin-top: 50px;
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    border-radius: 4px;
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.back-home a {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: inherit;
+}
+
+.back-home:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    cursor: pointer;
+}
+
+textarea {
+    width: 200px;
+    height:200px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+button {
+    width: 200px;
+    background-color: transparent;
+    border: 1px solid gray;
+    border-radius: 2px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: gray;
+    text-transform: uppercase;
+}
+
+button:hover {
+    border-color: midnightblue;
+    color: midnightblue;
+    cursor: pointer;
+}
+
+.tile-link {
+    text-decoration: none;
+    color: black;
+}
+
+ul.social-icons {
+    list-style: none;
+    display: inline;
+    float: right;
+    margin: 0;
+}
+ul.social-icons li {
+    display: inline-block;
+    margin-right: 25px;
+}
+ul.social-icons li a {
+    position: relative;
+    display: block;
+    color: white;
+    font-size: 40px;
+    overflow: hidden;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    text-indent: 60px;
+    line-height: 60px;
+    font-family: 'FontAwesome';
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+ul.social-icons li a:before {
+    font-family: 'FontAwesome';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    text-indent: 0;
+    line-height: inherit;
+}
+
+ul.social-icons li a:hover {
+    color: lightblue;
+    border-color: lightblue;
+}
+
+input {
+    margin-bottom: 10px;
+    width: 200px;
+    box-sizing: border-box;
+    padding: 4px;
+}
+
+footer {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-top: 100px;
+}
