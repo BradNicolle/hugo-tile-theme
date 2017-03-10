@@ -7,39 +7,36 @@ body {
     background-attachment: fixed;
 }
 h1 {
-    //font-family: 'Comfortaa', cursive;
-    //font-family: 'Source Sans Pro', sans-serif;
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
     letter-spacing: -4px;
-    font-weight: 100;
+    font-weight: 200;
     font-size: 60px;
-    //padding: 10px;
     margin: 0;
     color: white;
-    //border: 10px solid white;
     display: inline-block;
 }
 h2 {
-    //font-family: 'Montserrat', sans-serif;
-    //font-family: 'Source Sans Pro', sans-serif;
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
     color: white;
     letter-spacing: 6px;
     margin-top: 40px;
+    font-weight: 300;
 }
 .tile {
     background-color: white;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: sans-serif;
     padding: 50px;
     margin-top: 40px;
     margin-bottom: 40px;
     margin-right: 60px;
     border-radius: 4px;
     transition: background-color 0.2s ease;
+    -moz-transition: background-color 0.2s ease;
+    -webkit-transition: background-color 0.2s ease;
 }
-.tile:hover {
+.tile.tile-hover:hover {
     background-color: rgba(255, 255, 255, 0.5);
     cursor: pointer;
 }
@@ -47,7 +44,7 @@ h2 {
     text-transform: uppercase;
     text-align: center;
     font-size: 1.85em;
-    font-weight: 200;
+    font-weight: 300;
     letter-spacing: 0.22em;
     color: #313f47;
 }
@@ -68,14 +65,12 @@ section {
     padding: 10px;
     color: white;
     border-radius: 4px;
-    transition: color 0.2s ease, background-color 0.2s ease;
-}
-
-.back-home a {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Raleway', sans-serif;
     text-decoration: none;
     text-transform: uppercase;
-    color: inherit;
+    transition: color 0.2s ease, background-color 0.2s ease;
+    -moz-transition: color 0.2s ease, background-color 0.2s ease;
+    -webkit-transition: color 0.2s ease, background-color 0.2s ease;
 }
 
 .back-home:hover {
@@ -84,36 +79,10 @@ section {
     cursor: pointer;
 }
 
-textarea {
-    width: 200px;
-    height:200px;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-button {
-    width: 200px;
-    background-color: transparent;
-    border: 1px solid gray;
-    border-radius: 2px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: gray;
-    text-transform: uppercase;
-}
-
-button:hover {
-    border-color: midnightblue;
-    color: midnightblue;
-    cursor: pointer;
-}
-
 .tile-link {
     text-decoration: none;
     color: black;
+    display: inline-block;
 }
 
 ul.social-icons {
@@ -142,6 +111,8 @@ ul.social-icons li a {
     line-height: 60px;
     font-family: 'FontAwesome';
     transition: color 0.2s ease, border-color 0.2s ease;
+    -moz-transition: color 0.2s ease, border-color 0.2s ease;
+    -webkit-transition: color 0.2s ease, border-color 0.2s ease;
 }
 
 ul.social-icons li a:before {
@@ -164,6 +135,8 @@ input {
     margin-bottom: 10px;
     width: 200px;
     box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     padding: 4px;
 }
 

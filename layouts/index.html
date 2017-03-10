@@ -2,12 +2,12 @@
 
 {{ partial "header.html" . }}
 
-{{ range $section, $taxonomy := .Site.Sections }}
+{{ range $name, $taxonomy := .Site.Taxonomies.categories }}
     <section>
-        <h2>{{ $section }}</h2>
+        <h2>{{ $name }}</h2>
         {{ range $taxonomy }}
         <a href="{{ .Page.Permalink }}" class="tile-link">
-            <div class="tile">
+            <div class="tile tile-hover">
                 <figure>
                     <img src="img/{{ .Page.Params.thumb }}"/>
                 </figure>
