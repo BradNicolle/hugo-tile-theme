@@ -40,6 +40,24 @@ h2 {
     background-color: rgba(255, 255, 255, 0.5);
     cursor: pointer;
 }
+figure.page-img {
+    float: left;
+    vertical-align: top;
+    width: 250px;
+}
+figure.page-img img {
+    width: 250px;
+}
+.tile.tile-single {
+    overflow: auto;
+    padding-top: 20px;
+    padding-right: 25%;
+    color: #999999;
+    vertical-align: top;
+}
+.tile.tile-single img {
+    max-width: 100%;
+}
 .tile h2 {
     text-transform: uppercase;
     text-align: center;
@@ -48,15 +66,25 @@ h2 {
     letter-spacing: 0.22em;
     color: #313f47;
 }
+.tile.tile-single h2 {
+    text-align: left;
+}
 .tile figure {
     width: 100%;
     text-align: center;
     padding: 0;
     margin: 0;
 }
+.tile figure img {
+    height: 192px;
+}
 section {
     display: inline-block;
     vertical-align: top;
+}
+
+section.section-single {
+    width: 100%;
 }
 
 .back-home {

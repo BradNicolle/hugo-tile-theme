@@ -5,9 +5,14 @@
 	<div>
 		<a href="{{ .Site.BaseURL }}" class="back-home">&lt; Back to home</a>
 	</div>
-	<h2>{{ .Title }}</h2>
-	<div class="tile">
-		{{ .Content }}
-	</div>
+	<section class="section-single">
+		<figure class="page-img">
+			<img src="{{ .Site.BaseURL }}/img/{{ .Params.thumb }}" />
+		</figure>
+		<div class="tile tile-single">
+			<h2>{{ .Title }}</h2>
+			{{ .Content }}
+		</div>
+	</section>
 
 {{partial "footer.html" . }}
