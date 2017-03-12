@@ -3,7 +3,7 @@
 {{ partial "header.html" . }}
 
 	<div>
-		<a href="{{ .Site.BaseURL }}" class="back-home">&lt; Back to home</a>
+		<a href="{{ .Site.BaseURL }}" class="text-link">&lt; Back to home</a>
 	</div>
 	<section class="section-single">
 		<figure class="page-img">
@@ -15,4 +15,6 @@
 		</div>
 	</section>
 
-{{partial "footer.html" . }}
+{{ partial "footer.html" . }}
+
+{{ partial "html_footer.html" . }}

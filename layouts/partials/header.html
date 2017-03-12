@@ -1,5 +1,12 @@
 <header>
     <h1>{{ .Site.Params.name }}</h1>
+
+    <ul class="top-menu">
+    	{{ range .Site.Params.navlinks }}
+    		<li><a href="{{ .Site.BaseURL }}{{ .url }}" class="text-link text-link-menu">{{ .name }}</a></li>
+    	{{ end }}
+    </ul>
+
     <ul class="social-icons">
         {{ range .Site.Params.social }}
             <li><a href="{{ .link }}" class="{{ .icon }}">{{ .title }}</a></li>

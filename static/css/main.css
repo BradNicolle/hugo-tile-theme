@@ -87,9 +87,9 @@ section.section-single {
     width: 100%;
 }
 
-.back-home {
-    margin-top: 50px;
+.text-link {
     display: inline-block;
+    margin-top: 50px;
     padding: 10px;
     color: white;
     border-radius: 4px;
@@ -101,10 +101,14 @@ section.section-single {
     -webkit-transition: color 0.2s ease, background-color 0.2s ease;
 }
 
-.back-home:hover {
+.text-link:hover {
     background-color: rgba(255, 255, 255, 0.5);
     color: black;
     cursor: pointer;
+}
+
+.text-link.text-link-menu {
+    display: inline;
 }
 
 .tile-link {
@@ -112,7 +116,22 @@ section.section-single {
     color: black;
     display: inline-block;
 }
-
+ul.top-menu {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    padding-top: 6px;
+    padding-left: 50px;
+    text-transform: uppercase;
+    list-style: none;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+}
+ul.top-menu li {
+    display: inline-block;
+    margin-right: 50px;
+    line-height: 60px;
+}
 ul.social-icons {
     list-style: none;
     display: inline;
