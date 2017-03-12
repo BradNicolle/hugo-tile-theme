@@ -10,11 +10,22 @@ h1 {
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
     letter-spacing: -4px;
-    font-weight: 200;
+    font-weight: 100;
     font-size: 60px;
     margin: 0;
     color: white;
     display: inline-block;
+}
+h1 a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease;
+    -moz-transition: border-color 0.2s ease;
+    -webkit-transition: border-color 0.2s ease;
+}
+h1 a:hover {
+    border-color: white;
 }
 h2 {
     font-family: 'Raleway', sans-serif;
@@ -56,7 +67,7 @@ figure.page-img img {
     vertical-align: top;
 }
 .tile.tile-single img {
-    max-width: 100%;
+    max-width: 33%;
 }
 .tile h2 {
     text-transform: uppercase;
@@ -187,10 +198,91 @@ input {
     padding: 4px;
 }
 
+.form-group label {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    padding: 4px;
+    display: block;
+    font-weight: 300;
+}
+
+.form-control {
+    width: 100%;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 24px;
+    font-family: sans-serif;
+    border: 1px solid #aaa;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.form-control:focus {
+    border: 1px solid lightblue;
+    box-shadow: 0px 0px 8px lightblue;
+}
+
+.btn {
+    background: transparent;
+    border: 1px solid #aaa;
+    border-radius: 2px;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    border-color: lightblue;
+}
+
 footer {
     text-align: center;
     font-family: 'Raleway', sans-serif;
     letter-spacing: 2px;
     text-transform: uppercase;
     padding-top: 100px;
+}
+
+@media (max-width: 800px) {
+    body {
+        padding: 20px;
+    }
+    h1 {
+        display: block;
+        text-align: center;
+    }
+    ul.top-menu {
+        display: block;
+        padding-left: 0;
+        margin-left: 0;
+        text-align: center;
+    }
+    figure.page-img {
+        display: block;
+        float: none;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .tile.tile-single {
+        padding: 10px;
+        margin: 0;
+        display: block;
+        float: none;
+        overflow: inherit;
+        vertical-align: inherit;
+    }
+    .tile.tile-single h2 {
+        text-align: center;
+    }
+    .tile.tile-single img {
+        max-width: 90%;
+    }
+    ul.top-menu li {
+        display: inline-block;
+        margin-left: 25px;
+        margin-right: 25px;
+        line-height: 60px;
+    }
 }

@@ -1,0 +1,36 @@
+{{ partial "html_head.html" . }}
+
+{{ partial "header.html" . }}
+
+	<section class="section-single">
+		<figure class="page-img">
+			<img src="{{ .Site.BaseURL }}/img/{{ .Params.thumb }}" />
+		</figure>
+		<div class="tile tile-single">
+			<h2>{{ .Title }}</h2>
+			{{ .Content }}
+			{{ with .Site.Params.email }}
+				<form id="contact-form" method="post" action="https://formspree.io/{{ . }}">
+					<div class="form-group">
+						<label for="name">Your name *</label>
+						<input type="text" name="name" id="name" required="required" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="email">Your email *</label>
+						<input type="email" name="email" id="email" required="required" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="message">Your message for me *</label>
+						<textarea rows="4" name="message" id="message" required="required" class="form-control"></textarea>
+					</div>
+					<div>
+						<input type="submit" value="Send" class="btn"/>
+					</div>
+				</form>
+			{{ end }}
+		</div>
+	</section>
+
+{{ partial "footer.html" . }}
+
+{{ partial "html_footer.html" . }}
