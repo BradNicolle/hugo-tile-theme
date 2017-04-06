@@ -9,6 +9,10 @@
 		<div class="tile tile-single">
 			<h2>{{ .Title }}</h2>
 			{{ .Content }}
+			{{ if .Site.DisqusShortname }}
+				<h2>Comments</h2>
+			{{ end }}
+			{{ template "_internal/disqus.html" . }}
 		</div>
 	</section>
 

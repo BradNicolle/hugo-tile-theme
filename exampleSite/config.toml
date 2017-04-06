@@ -5,8 +5,11 @@ theme = "hugo-tile-theme"
 title = "Hugo Tile Theme"
 preserveTaxonomyNames = true
 
-# Enter your tracking code to enable Google Analytics
+# Optionally, enter your tracking code to enable Google Analytics
 googleAnalytics = "UA-XXXXX-Y"
+
+# Optionally, enter your Disqus shortname for Disqus comment support (of the form <mysite>.disqus.com)
+disqusShortname = "runnably.disqus.com"
 
 [params]
 	
